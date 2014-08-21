@@ -1,0 +1,18 @@
+<div class="row panel radius">
+	<h2>The hangman is: {{game.hangman}}</h2>
+</div>
+
+<div class="row panel radius">
+	<h2>The word is: {{game.runningAnswer}}</h2>
+</div>
+
+<div class="row panel radius">
+	<label>Guess <input type="text" name="guess" value="" size="3" maxlength="1" ng-model="guess" /></label>
+	<a class="button radius" ng-click="submit(guess)">Submit</a>
+
+	<p>{{guess}}</p>
+
+	<p>
+	{{message}}
+	</p>	
+</div>
