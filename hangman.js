@@ -17,9 +17,7 @@ app.config([
 var controllers = angular.module("hangmanControllers", []);
 
 controllers.controller("introController", [
-	"$scope",
-	function introController($scope) {
-		$scope.message = "Play Me!";
+	function introController() {
 	}
 ]);
 
